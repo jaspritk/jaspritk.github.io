@@ -1,0 +1,237 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
+*,
+*::after,
+*::before {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    cursor: none;
+}
+
+body {
+    --primary: #167D7F;
+    --secondary: #DDFFE7;
+
+    font-family: 'Poppins', sans-serif;
+}
+
+.container {
+    width: 100%;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+header {
+    margin-top: 50px;
+}
+
+/* Hero */
+
+.hero {
+    margin: 50px 0;
+}
+
+.hero .intro {
+    color: rgb(100, 100, 100);
+    font-size: 40px;
+    font-weight: 700;
+}
+
+.hero .intro .small {
+    font-size: 16px;
+    font-weight: 400;
+}
+
+.hero .title {
+    margin-top: 20px;
+}
+
+.hero .title h2 {
+    text-transform: uppercase;
+    font-weight: 400;
+    letter-spacing: 2px;
+    font-size: 20px;
+    color: rgb(100, 100, 100);
+}
+
+.hero .summary {
+    margin-top: 20px;
+}
+
+.hero .summary p {
+    color: rgb(122, 122, 122);
+}
+
+.hero .connect {
+    margin-top: 30px;
+    display: flex;
+    align-items: center;
+}
+
+.hero .connect svg {
+    width: 25px;
+    fill: var(--primary);
+    margin: 10px;
+}
+
+.hero .connect .resume {
+    width: 18px;
+}
+
+.hero .connect svg:hover {
+    fill: rgb(100, 100, 100);
+}
+
+/* Card */
+
+.angular,
+.freelancing,
+.webinars,
+.casestudies,
+.dataanalysis {
+    margin-top: 60px;
+}
+
+.angular h2,
+.webinars h2,
+.freelancing h2,
+.casestudies h2,
+.dataanalysis h2 {
+    color: rgb(100, 100, 100);
+    text-transform: uppercase;
+    font-weight: 500;
+    font-size: 14px;
+    letter-spacing: 4px;
+}
+
+.cards {
+    display: flex;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    margin: 30px -15px 0;
+}
+
+.cards>* {
+    width: 33.33%;
+    padding: 0 15px;
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+    margin: 30px 0;
+    transition: 0.5s all;
+}
+
+.card-img {
+    width: 100%;
+    border-radius: 10px;
+    overflow: hidden;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+.card-img:hover {
+    box-shadow: 0px 0px 15px 1px rgba(163, 163, 163, 1);
+    transition: .3s;
+}
+
+.card-title a{
+    text-decoration: none;
+}
+
+.card-title h3 {
+    font-weight: 600;
+    font-size: 18px;
+    text-transform: uppercase;
+    color: rgb(100, 100, 100);
+    font-size: 16px;
+    margin-top: 20px;
+}
+
+.card-description p {
+    color: rgb(122, 122, 122);
+    font-size: 14px;
+    margin-top: 10px;
+}
+
+.dataanalysis li {
+    color: rgb(122, 122, 122);
+    font-size: 14px;
+    margin-top: 10px;
+}
+
+footer {
+    background-color: var(--primary);
+    color: var(--secondary);
+    padding: 30px 5px;
+    margin-top: 50px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    text-align: center;
+}
+
+.arrow {
+    display: block;
+    position: fixed;
+    right: 20px;
+    bottom: 20px;
+}
+
+.arrow img {
+    border-radius: 50px;
+}
+
+@media only screen and (max-width: 600px) {
+    
+    .container {
+        width: 90%;
+        margin: 0 auto;
+    }
+
+    .cards>* {
+        width: 100%;
+    }
+}
+
+
+/* Cursor */
+
+.cursor {
+    width: 70px;
+    height: 70px;
+    border-radius: 100%;
+    border: 1px solid #DDFFE7;
+    background-color: #DDFFE7;
+    opacity: 0.5;
+    transition: all 200ms ease-out;
+    position: fixed;
+    pointer-events: none;
+    left: 0;
+    top: 0;
+    transform: translate(calc(-50% + 15px), -50%);
+  }
+  
+  .cursor2 {
+    width: 10px;
+    height: 10px;
+    border-radius: 100%;
+    background-color: #167D7F;
+    position: fixed;
+    transform: translate(-50%, -50%);
+    pointer-events: none;
+    transition: width .3s, height .3s, opacity .3s;
+  }
+  
+  .hover {
+    opacity: 0.5;
+    width: 120px;
+    height: 120px;
+  }
+  
+  .cursorinnerhover {
+    width: 20px;
+    height: 20px;
+  }
