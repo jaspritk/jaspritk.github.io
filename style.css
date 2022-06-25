@@ -186,6 +186,9 @@ footer {
 
 @media only screen and (max-width: 600px) {
     
+    * {
+        cursor: default;
+    }
     .container {
         width: 90%;
         margin: 0 auto;
@@ -194,6 +197,11 @@ footer {
     .cards>* {
         width: 100%;
     }
+
+    .cursor, .cursor2 {
+        display: none;
+    } 
+
 }
 
 
