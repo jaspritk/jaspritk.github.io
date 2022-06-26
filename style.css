@@ -16,6 +16,45 @@ body {
     font-family: 'Poppins', sans-serif;
 }
 
+/* Cursor */
+
+.cursor {
+    width: 70px;
+    height: 70px;
+    border-radius: 100%;
+    border: 1px solid #DDFFE7;
+    background-color: #DDFFE7;
+    opacity: 0.5;
+    transition: all 200ms ease-out;
+    position: fixed;
+    pointer-events: none;
+    left: 0;
+    top: 0;
+    transform: translate(calc(-50% + 15px), -50%);
+}
+  
+.cursor2 {
+    width: 10px;
+    height: 10px;
+    border-radius: 100%;
+    background-color: #167D7F;
+    position: fixed;
+    transform: translate(-50%, -50%);
+    pointer-events: none;
+    transition: width .3s, height .3s, opacity .3s;
+}
+  
+.hover {
+    opacity: 0.5;
+    width: 120px;
+    height: 120px;
+}
+  
+.cursorinnerhover {
+    width: 20px;
+    height: 20px;
+}
+
 .container {
     width: 100%;
     max-width: 1000px;
@@ -108,13 +147,15 @@ header {
 .cards {
     display: flex;
     align-items: flex-start;
+    /* justify-content: space-between; */
     flex-wrap: wrap;
-    margin: 30px -15px 0;
+    margin: 30px -20px 0;
 }
 
 .cards>* {
     width: 33.33%;
-    padding: 0 15px;
+    padding: 0 20px;
+    margin: 0 auto;
 }
 
 .card {
@@ -122,6 +163,7 @@ header {
     flex-direction: column;
     margin: 30px 0;
     transition: 0.5s all;
+    /* width: 30%; */
 }
 
 .card-img {
@@ -149,12 +191,14 @@ header {
     color: rgb(100, 100, 100);
     font-size: 16px;
     margin-top: 20px;
+    text-align: center;
 }
 
 .card-description p {
     color: rgb(122, 122, 122);
     font-size: 14px;
     margin-top: 10px;
+    text-align: justify;
 }
 
 .dataanalysis li {
@@ -203,43 +247,3 @@ footer {
     } 
 
 }
-
-
-/* Cursor */
-
-.cursor {
-    width: 70px;
-    height: 70px;
-    border-radius: 100%;
-    border: 1px solid #DDFFE7;
-    background-color: #DDFFE7;
-    opacity: 0.5;
-    transition: all 200ms ease-out;
-    position: fixed;
-    pointer-events: none;
-    left: 0;
-    top: 0;
-    transform: translate(calc(-50% + 15px), -50%);
-  }
-  
-  .cursor2 {
-    width: 10px;
-    height: 10px;
-    border-radius: 100%;
-    background-color: #167D7F;
-    position: fixed;
-    transform: translate(-50%, -50%);
-    pointer-events: none;
-    transition: width .3s, height .3s, opacity .3s;
-  }
-  
-  .hover {
-    opacity: 0.5;
-    width: 120px;
-    height: 120px;
-  }
-  
-  .cursorinnerhover {
-    width: 20px;
-    height: 20px;
-  }
