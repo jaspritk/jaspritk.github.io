@@ -11,9 +11,28 @@
 
 body {
     --primary: #167D7F;
-    --secondary: #DDFFE7;
+    --secondary: rgb(219, 255, 230);
 
     font-family: 'Poppins', sans-serif;
+}
+
+.header {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1;
+}
+
+.progress-container {
+    height: 5px;
+    width: 100%;
+}
+
+.progress-bar {
+    background: rgb(27, 114, 116);
+    background: linear-gradient(90deg, rgba(27, 114, 116, 1) 0%, rgba(41, 160, 177, 1) 100%);
+    height: 3px;
+    width: 0%;
 }
 
 /* Cursor */
@@ -147,7 +166,6 @@ header {
 .cards {
     display: flex;
     align-items: flex-start;
-    /* justify-content: space-between; */
     flex-wrap: wrap;
     margin: 30px -20px 0;
 }
@@ -163,7 +181,6 @@ header {
     flex-direction: column;
     margin: 30px 0;
     transition: 0.5s all;
-    /* width: 30%; */
 }
 
 .card-img {
@@ -176,7 +193,7 @@ header {
 }
 
 .card-img:hover {
-    box-shadow: 0px 0px 15px 1px rgba(163, 163, 163, 1);
+    box-shadow: 0px 0px 15px 1px rgba(230, 230, 230, 1);
     transition: .3s;
 }
 
@@ -234,6 +251,11 @@ footer {
         cursor: default;
     }
 
+    .cursor,
+    .cursor2 {
+        display: none;
+    }
+
     .container {
         width: 80%;
         margin: 0 auto;
@@ -245,11 +267,6 @@ footer {
 
     .card-img {
         box-shadow: 0px 0px 15px 1px rgba(214, 214, 214, 0.5);
-    }
-
-    .cursor,
-    .cursor2 {
-        display: none;
     }
 
 }
