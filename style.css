@@ -135,7 +135,7 @@ header {
 .hero .connect svg {
     width: 25px;
     fill: var(--primary);
-    margin: 10px;
+    margin-right: 20px;
 }
 
 .hero .connect .resume {
