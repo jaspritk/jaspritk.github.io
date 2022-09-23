@@ -7,4 +7,7 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'jaspritk.github.io';
+
+  // date:any = Date.now();
+  year:any = new Date().getFullYear()
 }

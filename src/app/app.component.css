@@ -1,0 +1,103 @@
+header {
+    background-color: rgba(255, 255, 255, 1);
+    padding: 10px 0;
+    position:fixed;
+    width: 100%;
+    top: 0;
+}
+
+.hero {
+    margin: 100px 0 50px 0;
+}
+
+.hero .intro {
+    font-size: 40px;
+    font-weight: 700;
+}
+
+.hero .intro .small {
+    font-size: 16px;
+    font-weight: 400;
+}
+
+.hero .title {
+    margin-top: 20px;
+}
+
+.hero .title h2 {
+    text-transform: uppercase;
+    font-weight: 400;
+    letter-spacing: 2px;
+    font-size: 20px;
+}
+
+.hero .summary {
+    margin-top: 20px;
+}
+
+.hero .connect {
+    margin-top: 30px;
+    display: flex;
+    align-items: center;
+}
+
+.hero .connect svg {
+    width: 25px;
+    fill: var(--primary);
+    margin-right: 50px;
+}
+
+.hero .connect .resume {
+    width: 18px;
+}
+
+.hero .connect svg:hover {
+    fill: rgb(77, 77, 77);
+}
+
+.btn-group {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 -7px;
+}
+
+
+button {
+    margin: 7px;
+    padding: 20px 20px;
+    border: 3px solid white;
+    background-color: white;
+    border-radius: 5px;
+    box-shadow: 0px 0px 21px 0px rgba(230,230,230,1);    /* font-size: px; */
+    color: rgb(77, 77, 77);
+    text-transform: uppercase;
+}
+
+button:hover {
+    border-bottom: 3px solid var(--primary);
+}
+
+.active {
+    border-bottom: 3px solid var(--primary);
+}
+
+
+@media only screen and (max-width: 767px) {
+    button {
+        padding: 15px;
+    }
+}
+
+@media only screen and (max-width: 639px) {
+    button{
+        padding: 10px;
+        width: calc(33.33% - 14px);
+    }
+}
+
+@media only screen and (max-width: 479px) {
+    button{
+        padding: 15px;
+        width: calc(50% - 14px);
+    }
+}
