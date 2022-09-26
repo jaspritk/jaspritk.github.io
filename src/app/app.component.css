@@ -1,4 +1,70 @@
-header {
+main {
+    display: flex;
+}
+
+/* SIDEBAR */
+
+.sidebar {
+    display: flex;
+    flex-direction: column;
+    padding: 50px 40px;
+    width: 15%;
+    position: fixed;
+    height: 100vh;
+    justify-content: space-between;
+}
+
+.sidebar .workspace {
+    margin-top: 30px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.sidebar .workspace a {
+    text-decoration: none;
+    color: rgb(77, 77, 77);
+}
+
+.sidebar .workspace a.active {
+    /* text-decoration: none; */
+    color: var(--primary);
+    font-weight: 600;
+    border-bottom: 1px solid var(--primary);
+    width: 50%;
+}
+
+.sidebar .workspace a:hover {
+    color: var(--primary);
+    font-weight: 600;
+}
+
+.sidebar .connect {
+    margin-top: 30px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.sidebar .connect svg {
+    width: 20px;
+    fill: rgb(77, 77, 77);
+}
+
+.sidebar .connect svg:hover {
+    fill: var(--primary);
+
+}
+
+/* CONTAINER */
+
+.container {
+    padding: 50px 30px 0 30px;
+    width: 85%;
+    margin-left: 15%;
+}
+
+/* header {
     background-color: rgba(255, 255, 255, 1);
     padding: 10px 0;
     position:fixed;
@@ -35,23 +101,23 @@ header {
     margin-top: 20px;
 }
 
-.hero .connect {
+.connect {
     margin-top: 30px;
     display: flex;
     align-items: center;
 }
 
-.hero .connect svg {
+.connect svg {
     width: 25px;
     fill: var(--primary);
     margin-right: 50px;
 }
 
-.hero .connect .resume {
+.connect .resume {
     width: 18px;
 }
 
-.hero .connect svg:hover {
+.connect svg:hover {
     fill: rgb(77, 77, 77);
 }
 
@@ -68,7 +134,7 @@ button {
     border: 3px solid white;
     background-color: white;
     border-radius: 5px;
-    box-shadow: 0px 0px 21px 0px rgba(230,230,230,1);    /* font-size: px; */
+    box-shadow: 0px 0px 21px 0px rgba(230,230,230,1);
     color: rgb(77, 77, 77);
     text-transform: uppercase;
 }
@@ -100,4 +166,4 @@ button:hover {
         padding: 15px;
         width: calc(50% - 14px);
     }
-}
+} */

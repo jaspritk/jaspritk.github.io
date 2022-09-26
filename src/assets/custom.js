@@ -30,7 +30,8 @@ document.addEventListener('mouseup', function () {
 
 svg.forEach(item => {
   item.addEventListener('mouseover', () => {
-    cursor.classList.add('hover');
+    // cursor.classList.add('hover');
+    cursor.setAttribute("class", "hover")
   });
   item.addEventListener('mouseleave', () => {
     cursor.classList.remove('hover');

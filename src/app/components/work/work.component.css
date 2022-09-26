@@ -1,0 +1,28 @@
+/* .hero {
+    margin: 50px 0;
+} */
+
+.hero .intro {
+    font-size: 40px;
+    font-weight: 700;
+}
+
+.hero .intro .small {
+    font-size: 16px;
+    font-weight: 400;
+}
+
+.hero .title {
+    margin-top: 20px;
+}
+
+.hero .title h2 {
+    text-transform: uppercase;
+    font-weight: 400;
+    letter-spacing: 2px;
+    font-size: 20px;
+}
+
+.hero .summary {
+    margin-top: 20px;
+}

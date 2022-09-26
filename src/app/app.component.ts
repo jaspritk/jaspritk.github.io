@@ -9,5 +9,7 @@ export class AppComponent {
   title = 'jaspritk.github.io';
 
   // date:any = Date.now();
-  year:any = new Date().getFullYear()
+  year:any = new Date().getFullYear();
+
+  
 }

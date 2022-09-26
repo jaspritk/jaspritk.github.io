@@ -12,6 +12,9 @@ import { InternshipComponent } from './components/internship/internship.componen
 import { NpmPackagesComponent } from './components/npm-packages/npm-packages.component';
 import { MeanStackComponent } from './components/mean-stack/mean-stack.component';
 import { FreelancingComponent } from './components/freelancing/freelancing.component';
+import { ArtsComponent } from './components/arts/arts.component';
+import { WorkComponent } from './components/work/work.component';
+import { AboutComponent } from './components/about/about.component';
 
 @NgModule({
   declarations: [
@@ -24,7 +27,10 @@ import { FreelancingComponent } from './components/freelancing/freelancing.compo
     InternshipComponent,
     NpmPackagesComponent,
     MeanStackComponent,
-    FreelancingComponent
+    FreelancingComponent,
+    ArtsComponent,
+    WorkComponent,
+    AboutComponent
   ],
   imports: [
     BrowserModule,
