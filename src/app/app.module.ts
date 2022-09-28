@@ -3,7 +3,7 @@ import { BrowserModule } from '@angular/platform-browser';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-// import { HomeComponent } from './components/home/home.component';
+
 import { DataAnalysisComponent } from './components/data-analysis/data-analysis.component';
 import { CaseStudiesComponent } from './components/case-studies/case-studies.component';
 import { WebinarsComponent } from './components/webinars/webinars.component';
@@ -19,7 +19,6 @@ import { AboutComponent } from './components/about/about.component';
 @NgModule({
   declarations: [
     AppComponent,
-    // HomeComponent,
     DataAnalysisComponent,
     CaseStudiesComponent,
     WebinarsComponent,
