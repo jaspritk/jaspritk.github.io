@@ -15,6 +15,7 @@ import { FreelancingComponent } from './components/freelancing/freelancing.compo
 import { ArtsComponent } from './components/arts/arts.component';
 import { WorkComponent } from './components/work/work.component';
 import { AboutComponent } from './components/about/about.component';
+import { SeoComponent } from './components/seo/seo.component';
 
 @NgModule({
   declarations: [
@@ -29,7 +30,8 @@ import { AboutComponent } from './components/about/about.component';
     FreelancingComponent,
     ArtsComponent,
     WorkComponent,
-    AboutComponent
+    AboutComponent,
+    SeoComponent
   ],
   imports: [
     BrowserModule,
