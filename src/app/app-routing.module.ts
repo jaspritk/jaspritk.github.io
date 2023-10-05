@@ -12,6 +12,7 @@ const routes: Routes = [
   { path: 'work', component: WorkComponent },
   { path: 'arts', component: ArtsComponent },
   { path: 'about', component: AboutComponent },
+  { path: '**', redirectTo: '/work', pathMatch: 'full' },
 ];
 
 @NgModule({
