@@ -16,6 +16,7 @@ import { ArtsComponent } from './components/arts/arts.component';
 import { WorkComponent } from './components/work/work.component';
 import { AboutComponent } from './components/about/about.component';
 import { SeoComponent } from './components/seo/seo.component';
+import { BusinessComponent } from './components/business/business.component';
 
 @NgModule({
   declarations: [
@@ -31,7 +32,8 @@ import { SeoComponent } from './components/seo/seo.component';
     ArtsComponent,
     WorkComponent,
     AboutComponent,
-    SeoComponent
+    SeoComponent,
+    BusinessComponent
   ],
   imports: [
     BrowserModule,

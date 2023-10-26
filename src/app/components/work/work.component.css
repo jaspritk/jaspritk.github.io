@@ -1,28 +1,33 @@
-/* .hero {
-    margin: 50px 0;
-} */
-
-.hero .intro {
-    font-size: 40px;
-    font-weight: 700;
+.hero .intro .name {
+  font-family: "Classical Diary";
+  font-size: 100px;
+  font-style: italic;
+  letter-spacing: 1px;
 }
 
 .hero .intro .small {
-    font-size: 16px;
-    font-weight: 400;
+  font-size: 16px;
+  font-weight: 400;
+  margin-bottom: 20px;
 }
 
 .hero .title {
-    margin-top: 20px;
+  margin-top: 20px;
 }
 
 .hero .title h2 {
-    text-transform: uppercase;
-    font-weight: 400;
-    letter-spacing: 2px;
-    font-size: 20px;
+  text-transform: uppercase;
+  font-weight: 400;
+  letter-spacing: 2px;
+  font-size: 20px;
 }
 
 .hero .summary {
-    margin-top: 20px;
+  margin-top: 20px;
+}
+
+@media only screen and (max-width: 600px) {
+  .hero .intro .name {
+    font-size: 50px;
+  }
 }
