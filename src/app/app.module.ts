@@ -17,6 +17,7 @@ import { WorkComponent } from './components/work/work.component';
 import { AboutComponent } from './components/about/about.component';
 import { SeoComponent } from './components/seo/seo.component';
 import { BusinessComponent } from './components/business/business.component';
+import { BadgesComponent } from './components/badges/badges.component';
 
 @NgModule({
   declarations: [
@@ -33,7 +34,8 @@ import { BusinessComponent } from './components/business/business.component';
     WorkComponent,
     AboutComponent,
     SeoComponent,
-    BusinessComponent
+    BusinessComponent,
+    BadgesComponent
   ],
   imports: [
     BrowserModule,
