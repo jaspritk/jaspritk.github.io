@@ -1,7 +1,7 @@
 .hero .intro .name {
   font-family: "Classical Diary";
-  font-size: 100px;
-  font-style: italic;
+  font-size: 50px;
+  /* font-style: italic; */
   letter-spacing: 1px;
 }
 

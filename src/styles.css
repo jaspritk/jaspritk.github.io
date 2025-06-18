@@ -168,6 +168,14 @@ img {
   text-align: center;
 }
 
+h3 {
+  font-weight: 600;
+  font-size: 18px;
+  text-transform: uppercase;
+  color: rgb(100, 100, 100);
+  font-size: 16px;
+  /* margin-top: 20px; */
+}
 .card-title h3:hover::after {
   width: 100%;
 }
@@ -176,6 +184,39 @@ img {
   font-size: 14px;
   margin-top: 10px;
   text-align: justify;
+}
+
+.experience-card-title {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 30px;
+}
+
+.experience-card-title div {
+  font-style: italic;
+}
+.experience-card-description {
+  padding-top: 15px;
+  list-style-position: inside;
+}
+
+.skills-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  padding-top: 30px;
+}
+
+.skill {
+  background-color: var(--primary);
+  color: white;
+  padding: 0.4em 0.8em;
+  border-radius: 0.4em;
+  font-size: 0.9rem;
+  white-space: nowrap;
+  /* cursor: default; */
+  /* transition: background 0.2s; */
 }
 
 footer {
